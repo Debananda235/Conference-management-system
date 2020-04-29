@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39B04640-F4B0-4ADF-84FA-6163DD0F8915}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Database_Project</RootNamespace>
+    <AssemblyName>Database Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\app\Aya\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessParticipantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessParticipantForm.Designer.cs">
+      <DependentUpon>AccessParticipantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccessReviewersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessReviewersForm.Designer.cs">
+      <DependentUpon>AccessReviewersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAuthorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAuthorForm.Designer.cs">
+      <DependentUpon>AddAuthorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddConferencesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddConferencesForm.Designer.cs">
+      <DependentUpon>AddConferencesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorsForm.Designer.cs">
+      <DependentUpon>AuthorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DeleteAuthorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteAuthorForm.Designer.cs">
+      <DependentUpon>DeleteAuthorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteConferencesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteConferencesForm.Designer.cs">
+      <DependentUpon>DeleteConferencesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParticipantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParticipantForm.Designer.cs">
+      <DependentUpon>ParticipantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterAuthorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterAuthorForm.Designer.cs">
+      <DependentUpon>RegisterAuthorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterParticipantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterParticipantForm.Designer.cs">
+      <DependentUpon>RegisterParticipantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterReviewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterReviewerForm.Designer.cs">
+      <DependentUpon>RegisterReviewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reg_log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reg_log.Designer.cs">
+      <DependentUpon>Reg_log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm1.Designer.cs">
+      <DependentUpon>ReportForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm2.Designer.cs">
+      <DependentUpon>ReportForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm3.Designer.cs">
+      <DependentUpon>ReportForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewersForm.Designer.cs">
+      <DependentUpon>ReviewersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowallEmailsReviewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowallEmailsReviewerForm.Designer.cs">
+      <DependentUpon>ShowallEmailsReviewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowSpecificReviewerFieldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowSpecificReviewerFieldForm.Designer.cs">
+      <DependentUpon>ShowSpecificReviewerFieldForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAuthorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAuthorForm.Designer.cs">
+      <DependentUpon>UpdateAuthorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateConferencesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateConferencesForm.Designer.cs">
+      <DependentUpon>UpdateConferencesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAuthorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAuthorsForm.Designer.cs">
+      <DependentUpon>ViewAuthorsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccessParticipantForm.resx">
+      <DependentUpon>AccessParticipantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccessReviewersForm.resx">
+      <DependentUpon>AccessReviewersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAuthorForm.resx">
+      <DependentUpon>AddAuthorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddConferencesForm.resx">
+      <DependentUpon>AddConferencesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorsForm.resx">
+      <DependentUpon>AuthorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteAuthorForm.resx">
+      <DependentUpon>DeleteAuthorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteConferencesForm.resx">
+      <DependentUpon>DeleteConferencesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParticipantForm.resx">
+      <DependentUpon>ParticipantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterAuthorForm.resx">
+      <DependentUpon>RegisterAuthorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterParticipantForm.resx">
+      <DependentUpon>RegisterParticipantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterReviewerForm.resx">
+      <DependentUpon>RegisterReviewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reg_log.resx">
+      <DependentUpon>Reg_log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportForm1.resx">
+      <DependentUpon>ReportForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm2.resx">
+      <DependentUpon>ReportForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm3.resx">
+      <DependentUpon>ReportForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewersForm.resx">
+      <DependentUpon>ReviewersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowallEmailsReviewerForm.resx">
+      <DependentUpon>ShowallEmailsReviewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowSpecificReviewerFieldForm.resx">
+      <DependentUpon>ShowSpecificReviewerFieldForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAuthorForm.resx">
+      <DependentUpon>UpdateAuthorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateConferencesForm.resx">
+      <DependentUpon>UpdateConferencesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAuthorsForm.resx">
+      <DependentUpon>ViewAuthorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
